@@ -1,7 +1,8 @@
 @font-face {
     font-family: Videopac;
     src: url(css/Videopac.woff2);
-    font-weight: lighter;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
  }
 
 .header {
