@@ -35,11 +35,9 @@
 
 #mainlogo {
     font-family: 'Videopac', sans-serif;
-    color:white;
-    color: rgb(215,246,251);
-    color: linear-gradient(180deg, rgba(215,246,251,1) 0%, rgba(185,251,245,1) 100%);
+    color:mintcream;
     text-align:center;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 body {
