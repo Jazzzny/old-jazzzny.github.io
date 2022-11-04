@@ -11,6 +11,7 @@
     text-align: center;
     font-size: 15px;
     font-family: 'Open Sans';
+    font-weight: bold;
     color:white;
     background: rgb(131,250,176);
     background: linear-gradient(180deg, rgba(131,250,176,1) 0%, rgba(143,211,244,1) 100%);
@@ -27,9 +28,9 @@
 }
 .header a:hover {
     border-radius: 8px;
-    background-color: seagreen;
+    border-color: mintcream;
+    border-style: solid;
     color:mintcream;
-
 }
 
 #mainlogo {
