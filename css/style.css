@@ -30,7 +30,7 @@
     border-style: solid;
 }
 .header a:hover {
-    border-color: mintcream;
+    background-color: rgba(245,255,250,0.5);
 }
 
 #mainlogo {
