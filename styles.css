@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Videopac;
+    src: url(Videopac.otf);
+ }
+
+.header {
+    padding-top: 10px;
+    margin:auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Videopac';
+    color:white;
+    background:mediumseagreen;
+    padding-bottom: 10px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position:relative;
+    z-index:9;   
+}
