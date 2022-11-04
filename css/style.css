@@ -8,11 +8,38 @@
     margin:auto;
     text-align: center;
     font-size: 15px;
-    font-family: 'Videopac';
+    font-family: 'Helvetica';
     color:white;
-    background:mediumseagreen;
+    background: rgb(131,250,176);
+    background: linear-gradient(180deg, rgba(131,250,176,1) 0%, rgba(143,211,244,1) 100%);
     padding-bottom: 10px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position:relative;
     z-index:9;   
+}
+
+.header a {
+    text-decoration: none;
+    color: inherit;
+    padding:4px;
+}
+.header a:hover {
+    border-radius: 8px;
+    background-color: seagreen;
+    color:mintcream;
+
+}
+
+#mainlogo {
+    font-family: 'Videopac', sans-serif;
+    color:white;
+    color: rgb(215,246,251);
+    color: linear-gradient(180deg, rgba(215,246,251,1) 0%, rgba(185,251,245,1) 100%);
+    text-align:center;
+    font-size: 40px;
+}
+
+body {
+    background-color: white;
+    margin: 0;
 }
