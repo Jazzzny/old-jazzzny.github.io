@@ -26,11 +26,10 @@
     color: inherit;
     padding:4px;
     border-radius: 8px;
-    border-color: transparent;
-    border-style: solid;
+    
 }
 .header a:hover {
-    background-color: rgba(245,255,250,0.5);
+    background-color: rgba(245,255,250,0.2);
 }
 
 #mainlogo {
