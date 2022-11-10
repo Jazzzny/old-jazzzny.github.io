@@ -70,3 +70,10 @@ hr {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
 }
+#logo {
+    height:40px;
+    width:auto;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    filter: brightness(0) saturate(100%) invert(92%) sepia(17%) saturate(157%) hue-rotate(79deg) brightness(106%) contrast(105%);
+}
