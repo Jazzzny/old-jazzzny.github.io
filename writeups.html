@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jazzzny</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body style="background-attachment: fixed;"
+            <div>
+           
+                <h1><code>LegacyKeyboardInjector.kext</code> Kernel Extension for OCLP</h1>
+                <p>After acquiring a MacBook5,2 (Mid-2009) for OCLP development, I noticed that the machine's keyboard shortcuts did not work - the topcase keyboard was recognized as a generic one.</p>
+                <p>This was quite inconvienent, as none of the function keys worked properly. So, I set off to develop a fix.</p>
+                <h2>Determining the root cause</h2>
+                <p>To set off, I looked for what was responsible for mapping keyboard layouts on macOS. After researching for Ventura, we quickly determined that <code>AppleUSBTopCase.kext</code> is responsible for mapping, so this where I started my search.</p>
+                <p>After comparing AppleUSBTopCase from 10.11 El Capitan and 12 Monterey, I quickly noticed that Monterey's kext's .plist file was missing several keys.</p>
+                <p>Fortunately, AppleUSBTopCase was removed from Ventura. So we can just install the version containing the keys to restore full function, right?</p>
+                <p>Not quite. While that would work on Ventura, it wouldn't on Monterey and older...</p>
+                <h2>Developing a kernel fix</h2>
+                <p>One useful kernel feature of macOS is the ability to install codeless kexts - kexts that can inject properties without needing any code.</p>
+                <p>By developing a codeless kext that reinjects the missing keys into macOS, I'm able to restore full keyboard support!</p>
+                <img src="img/FakeZoe.png" width="30%">
+                <p>This fix was incorporated in OCLP v0.6.6.</p>
+
+                <p>However, one issue remains with the MacBook5,2 - trackpad support. Apple removed all support for the 5,2's legacy 2-finger trackpad with 10.12 Sierra by botching the code in IOHIDFamily. But thats an issue for another day.</p>
+
+                
+                <br>
+                <a href="index.html">Back</a>
+                
+            </div>
+        </div>
+    </body>
+</html>
